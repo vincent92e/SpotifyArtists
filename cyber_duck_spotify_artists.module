@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains cyber_duck_spotify_artists.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cyber_duck_spotify_artists_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cyber_duck_spotify_artists module.
+    case 'help.page.cyber_duck_spotify_artists':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module to fetch artists info from Spotify') . '</p>';
+      return $output;
+
+    default:
+  }
+}
