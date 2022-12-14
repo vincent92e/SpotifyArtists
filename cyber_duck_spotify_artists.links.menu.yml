@@ -1,0 +1,5 @@
+spotify_artists.fetch.admin:
+  title: 'Spotify'
+  route_name: cyber_duck_spotify_artists.get_artist_controller_fetch
+  parent: system.admin_config_content
+  description: 'Fetch artists from spotify'

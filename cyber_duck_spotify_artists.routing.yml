@@ -1,0 +1,8 @@
+
+cyber_duck_spotify_artists.get_artist_controller_fetch:
+  path: '/admin/config/spotify/artists'
+  defaults:
+    _controller: '\Drupal\cyber_duck_spotify_artists\Controller\GetArtistController::fetch'
+    _title: 'Fetch Artists'
+  requirements:
+    _permission: 'access administration pages'
