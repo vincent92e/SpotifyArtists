@@ -1,5 +1,9 @@
 name: Cyber-Duck Spotify Artists
 type: module
 description: 'Custom module to fetch artists information from Spotify'
-core_version_requirements: ^9 || ^10
+core_version_requirement: ^9 || ^10
 package: 'CyberDuck'
+dependencies:
+  - field_group:field_group
+  - entity_reference_revisions:entity_reference_revisions
+  - paragraphs:paragraphs
