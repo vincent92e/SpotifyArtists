@@ -1,0 +1,6 @@
+spotify_artists:
+  css:
+    theme:
+      assets/main.css: { preprocess: false }
+  js:
+    assets/main.js: { preprocess: false }

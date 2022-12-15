@@ -4,6 +4,14 @@ description: 'Custom module to fetch artists information from Spotify'
 core_version_requirement: ^9 || ^10
 package: 'CyberDuck'
 dependencies:
+  - drupal:node
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - drupal:views_ui
+  - drupal:image
+  - drupal:media
+  - drupal:rest
+  - drupal:serialization
+  - restui:restui
   - field_group:field_group
-  - entity_reference_revisions:entity_reference_revisions
-  - paragraphs:paragraphs
