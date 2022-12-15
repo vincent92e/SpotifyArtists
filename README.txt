@@ -1,0 +1,18 @@
+Requirements
+- latest version of node
+- spotify developer account with client_id & secret_key
+- 
+
+
+Installation steps
+
+
+1. Download & enable module dependencies using composer & drush
+
+2. Run "npm install" command to download node packages
+
+3. Go to /js/components/Artists.jsx and update the values for the client_id & client_secret
+    Note: This is not the right way to add these keys. Best way would be to create an admin from
+    to store keys & id but because of not having enough time I decided to leave it this way.
+
+4   Go to /admin/config/spotify/artists to fetch data from spotify.
