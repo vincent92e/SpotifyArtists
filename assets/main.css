@@ -1,0 +1,24 @@
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./css/styles.scss ***!
+  \****************************************************************************************************************************************************/
+.artist {
+  position: relative;
+}
+.artist .fetching {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  font-size: 25px;
+  background-color: grey;
+  opacity: 0.8;
+}
+
+.empty-data {
+  padding: 100px;
+  text-align: center;
+}
