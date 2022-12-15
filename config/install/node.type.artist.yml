@@ -1,0 +1,18 @@
+uuid: 7bf77902-0309-4e15-890f-f4af9ceb4fcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Artist
+type: artist
+description: 'Spotify artist content type'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

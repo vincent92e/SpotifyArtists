@@ -1,0 +1,23 @@
+uuid: 4ac03a72-45e7-4599-b25b-0817cd18d64e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_followers
+    - node.type.artist
+id: node.artist.field_followers
+field_name: field_followers
+entity_type: node
+bundle: artist
+label: Followers
+description: 'Artist''s number of Spotify followers'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

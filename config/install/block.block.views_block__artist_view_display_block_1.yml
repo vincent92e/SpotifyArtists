@@ -1,0 +1,24 @@
+uuid: 9037eaf9-a021-4ea1-a8e7-0df3417dbac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.artist_view_display
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__artist_view_display_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:artist_view_display-block_1'
+settings:
+  id: 'views_block:artist_view_display-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

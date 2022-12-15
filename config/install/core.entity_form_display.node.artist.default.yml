@@ -1,0 +1,125 @@
+uuid: d91301ac-6d1f-4675-b21c-50c9b7b9fb81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artist.field_artist_image
+    - field.field.node.artist.field_followers
+    - field.field.node.artist.field_genres
+    - field.field.node.artist.field_spotify_id
+    - node.type.artist
+  module:
+    - field_group
+    - media_library
+    - path
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_tab
+        - group_image
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_tab:
+      children:
+        - title
+        - field_spotify_id
+        - field_followers
+        - field_genres
+      label: About
+      region: content
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_image:
+      children:
+        - field_artist_image
+      label: Image
+      region: content
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.artist.default
+targetEntityType: node
+bundle: artist
+mode: default
+content:
+  field_artist_image:
+    type: media_library_widget
+    weight: 27
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_followers:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_genres:
+    type: string_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_spotify_id:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

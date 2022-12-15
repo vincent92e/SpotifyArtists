@@ -1,0 +1,49 @@
+uuid: b653bdac-6eca-4163-9cd6-0974e71fb2a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artist.field_artist_image
+    - field.field.node.artist.field_followers
+    - field.field.node.artist.field_genres
+    - field.field.node.artist.field_spotify_id
+    - node.type.artist
+  module:
+    - user
+id: node.artist.default
+targetEntityType: node
+bundle: artist
+mode: default
+content:
+  field_artist_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_followers:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_genres:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_spotify_id: true

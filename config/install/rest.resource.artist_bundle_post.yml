@@ -1,0 +1,18 @@
+uuid: 28f0ffe0-8897-4b8d-80c3-91689b054dc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - cyber_duck_spotify_artists
+    - serialization
+    - user
+id: artist_bundle_post
+plugin_id: artist_bundle_post
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

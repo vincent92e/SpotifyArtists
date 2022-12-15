@@ -1,0 +1,28 @@
+uuid: 8429f41f-6f05-41c5-b126-d6f3ba26b3b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.artist.field_artist_image
+    - field.field.node.artist.field_followers
+    - field.field.node.artist.field_genres
+    - field.field.node.artist.field_spotify_id
+    - node.type.artist
+  module:
+    - user
+id: node.artist.teaser
+targetEntityType: node
+bundle: artist
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_artist_image: true
+  field_followers: true
+  field_genres: true
+  field_spotify_id: true
