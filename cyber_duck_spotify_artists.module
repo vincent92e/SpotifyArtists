@@ -5,7 +5,10 @@
  * Contains cyber_duck_spotify_artists.module.
  */
 
+use Drupal\Core\Session\AccountInterface;
+use Drupal\node\NodeInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Access\AccessResult;
 
 /**
  * Implements hook_help().
@@ -20,5 +23,24 @@ function cyber_duck_spotify_artists_help($route_name, RouteMatchInterface $route
       return $output;
 
     default:
+  }
+}
+
+/**
+ * Implements hook_node_access().
+ */
+function cyber_duck_spotify_artists_node_access(NodeInterface $node, $op, AccountInterface $account) {
+  // Get node type.
+  $type = $node
+    ->bundle();
+
+  // Grant view permission only to authenticated users.
+  if ($op === 'view' && $type === 'artist' && $account->isAnonymous()) {
+    return AccessResult::forbidden()
+      ->cachePerPermissions();
+  }
+  else {
+    return AccessResult::allowed()
+      ->cachePerPermissions();
   }
 }
