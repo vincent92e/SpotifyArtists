@@ -1,5 +1,3 @@
-For the purpose of this project, please make sure to checkout from the 'develop' branch.
-
 Requirements
 - latest version of node
 - spotify developer account with client_id & secret_key
