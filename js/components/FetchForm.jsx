@@ -6,7 +6,7 @@ const FetchForm = (props) => {
 
   return (
     <div className="fetch-form">
-      <label htmlFor="artist-id"></label>
+      <label htmlFor="artist-id">Spotify ID</label>
       <input ref={inputRef} id="artist-id" type="text" name="artist-id"></input>
       <button
         onClick={() => {

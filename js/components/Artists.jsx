@@ -75,7 +75,7 @@ const Artists = () => {
     // Url to fetch artist information.
     const fetchArtistUrl = `https://api.spotify.com/v1/artists/${spotifyId}`;
     setFetchStatus(!status.done);
-    if (counter <= maxNumOfArtist) {
+    if (counter < maxNumOfArtist) {
       try {
         // Fetch Spotify token for authorisation.
         fetchSpotifyArtistWithToken(
@@ -92,7 +92,7 @@ const Artists = () => {
             }
 
             if (
-              newArtists.find((elem) => elem.spotify_id !== data.id) ||
+              newArtists.find((elem) => elem.spotify_id === data.id) ||
               counter === 0
             ) {
               // Post data header options.
@@ -158,6 +158,7 @@ const Artists = () => {
         return error;
       }
     } else {
+      setFetchStatus(status.done);
       // Set status message.
       setMessage(
         statusTypes.error,
