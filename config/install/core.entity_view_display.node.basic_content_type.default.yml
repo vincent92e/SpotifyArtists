@@ -8,9 +8,6 @@ dependencies:
   module:
     - text
     - user
-  enforced:
-    module:
-      - node_type_example
 _core:
   default_config_hash: 6m-_fnOdVVEunnFLdGHDOWIJ7NNTZZ1mATWMD4CCt0I
 id: node.basic_content_type.default

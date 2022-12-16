@@ -1,0 +1,12 @@
+uuid: 686567f8-ff14-4d7d-a1e6-c159d97fe785
+langcode: en
+status: true
+_core:
+  default_config_hash: ioIIGvkXGIf5pjbg7sx9IMjNn1OOm1E-0L4k6glBpoI
+name: 'Example: Basic Content Type'
+type: basic_content_type
+description: 'This is a very basic content type.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

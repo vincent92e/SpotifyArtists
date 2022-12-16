@@ -10,8 +10,6 @@ Installation steps
 
 2. Run "npm install" command to download node packages
 
-3. Run "composer install" if the configs or the artist content type is not showing or available
-
 3. Go to /js/components/Artists.jsx and update the values for the client_id & client_secret
     Note: This is not the right way to add these keys. Best way would be to create an admin from
     to store keys & id but because of not having enough time I decided to leave it this way.
