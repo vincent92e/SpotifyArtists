@@ -92,7 +92,7 @@ const Artists = () => {
             }
 
             if (
-              newArtists.find((elem) => elem.spotify_id === data.id) ||
+              newArtists.find((elem) => elem.spotify_id !== data.id) ||
               counter === 0
             ) {
               // Post data header options.
@@ -158,7 +158,6 @@ const Artists = () => {
         return error;
       }
     } else {
-      setFetchStatus(status.done);
       // Set status message.
       setMessage(
         statusTypes.error,
